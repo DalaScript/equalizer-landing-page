@@ -1,0 +1,225 @@
+/* Colors
+ ******************************/
+/* Primary
+ ***************/
+/* Global Variables
+ ******************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #FCFAF9;
+}
+
+img {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* Body Variables
+ ******************************/
+body {
+  background-image: url(../images/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: 20px -300px;
+}
+
+header {
+  padding: 64px 20px;
+}
+
+.hero {
+  padding: 0 20px 64px;
+}
+.hero__title {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: -1px;
+  color: #191826;
+}
+.hero__caption {
+  margin-top: 40px;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #191826;
+}
+
+.content {
+  margin: 110px 0 625px;
+  width: 100%;
+  height: 380px;
+  background-color: #191826;
+  background-image: url(../images/bg-pattern-2.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 312px 468px;
+  position: relative;
+}
+.content__img {
+  position: absolute;
+  top: -110px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.content__card {
+  padding: 48px 20px 111px;
+  background-color: #FA7453;
+  position: absolute;
+  bottom: -625px;
+}
+.content__card-title {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 110%;
+  color: #191826;
+}
+.content__card-caption {
+  margin-top: 24px;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #191826;
+}
+.content__card-price-container {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.content__card-price {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 110%;
+  color: #191826;
+}
+.content__card-month {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #191826;
+}
+.content__card-btns {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.content__card-btn {
+  height: 64px;
+  border: none;
+  border-radius: 12px;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 180%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.content__card-btn--ios {
+  background-color: #191826;
+  color: #FCFAF9;
+}
+.content__card-btn--android {
+  background-color: #FCFAF9;
+  color: #191826;
+}
+
+footer {
+  padding: 64px 20px 80px;
+}
+
+.footer-inner {
+  margin-top: 32px;
+}
+.footer-inner__copy-right {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #191826;
+}
+.footer-inner__copy-right span {
+  margin-top: 1px;
+  display: inline-block;
+}
+.footer-inner__email {
+  display: block;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #191826;
+}
+.footer-inner__nav-links {
+  margin-top: 32px;
+}
+.footer-inner__nav-links ul {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.footer-inner__link {
+  display: flex;
+}
+.footer-inner__link img {
+  width: 20px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .content__card-btn {
+    cursor: pointer;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  }
+  .content__card-btn path {
+    transition: fill 0.2s ease-out;
+  }
+  .content__card-btn--ios:hover {
+    background-color: #66E2DC;
+    color: #191826;
+  }
+  .content__card-btn--ios:hover path {
+    fill: #191826;
+  }
+  .content__card-btn--android:hover {
+    background-color: #FFB964;
+    color: #191826;
+  }
+
+  .footer-inner__link path {
+    transition: fill 0.2s ease-out;
+  }
+  .footer-inner__link:hover path {
+    fill: #FA7453;
+  }
+}

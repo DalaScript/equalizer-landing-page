@@ -1,0 +1,293 @@
+/* Colors
+ ******************************/
+/* Primary
+ ***************/
+$cyan: #66E2DC;
+$orange: #FA7453;
+$yellow: #FFB964;
+$white: #FCFAF9;
+$slate: #191826;
+
+
+/* Global Variables
+ ******************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: $white;
+}
+
+img {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Body Variables
+ ******************************/
+body {
+    background-image: url(../images/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: 20px -300px;
+}
+
+header {
+    padding: 64px 20px;
+}
+
+.hero {
+    padding: 0 20px 64px;
+
+    &__title {
+        font-family: "IBM Plex Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 100%;
+        letter-spacing: -1px;
+
+        color: $slate;
+    }
+
+    &__caption {
+        margin-top: 40px;
+
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+
+        color: $slate;
+    }
+}
+
+.content {
+    margin: 110px 0 625px;
+    width: 100%;
+    height: 380px;
+
+    background-color: $slate;
+    background-image: url(../images/bg-pattern-2.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 312px 468px;
+
+    position: relative;
+
+    &__img {
+        position: absolute;
+        top: -110px;
+        left: 50%;
+
+        transform: translateX(-50%);
+    }
+
+    &__card {
+        padding: 48px 20px 111px;
+
+        background-color: $orange;
+        position: absolute;
+        bottom: -625px;
+
+        &-title {
+            font-family: 'IBM Plex Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 110%;
+    
+            color: $slate;
+        }
+
+        &-caption {
+            margin-top: 24px;
+
+            font-family: 'IBM Plex Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+
+            color: $slate;
+        }
+
+        &-price-container {
+            margin-top: 40px;
+
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        &-price {
+            font-family: 'IBM Plex Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 110%;
+
+            color: $slate;
+        }
+
+        &-month {
+            font-family: 'IBM Plex Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+
+            color: $slate;
+        }
+
+        &-btns {
+            margin-top: 48px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        &-btn {
+            height: 64px;
+            border: none;
+            border-radius: 12px;
+
+            font-family: 'IBM Plex Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+
+            line-height: 180%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+
+            &--ios {
+                background-color: $slate;
+                color: $white;
+            }
+
+            &--android {
+                background-color: $white;
+                color: $slate;
+            }
+        }
+    }
+}
+
+footer {
+    padding: 64px 20px 80px;
+}
+
+.footer-inner {
+    margin-top: 32px;
+
+    &__copy-right {
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+
+        color: $slate;
+
+        span {
+            margin-top: 1px;
+            display: inline-block;
+        }
+    }
+
+    &__email {
+        display: block;
+        
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+
+        color: $slate;
+    }
+
+    &__nav-links {
+        margin-top: 32px;
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+    }
+
+    &__link {
+        display: flex;
+
+        img {
+            width: 20px;
+        }
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .content {
+        &__card {
+            &-btn {
+
+                cursor: pointer;
+                transition: background-color .2s ease-out, color .2s ease-out;
+
+                path {
+                    transition: fill .2s ease-out;
+                }
+
+                &--ios {
+                    &:hover {
+                        background-color: $cyan;
+        
+                        color: $slate;
+
+                        path {
+                            fill: $slate;
+                        }
+                    }
+                }
+
+                &--android {
+                    &:hover {
+                        background-color: $yellow;
+
+                        color: $slate;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-inner {
+        &__link {
+            path {
+                transition: fill .2s ease-out;
+            }
+            &:hover {
+                path {
+                    fill: $orange;
+                }
+            }
+        }
+    }
+}
