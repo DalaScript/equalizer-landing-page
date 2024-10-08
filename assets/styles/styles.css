@@ -32,8 +32,8 @@ li {
 body {
   background-image: url(../images/bg-main-mobile.png);
   background-repeat: no-repeat;
-  background-size: 200%;
-  background-position: 20px -300px;
+  background-size: 750px;
+  background-position: calc(100% + 355px) -300px;
 }
 
 header {
@@ -221,5 +221,70 @@ footer {
   }
   .footer-inner__link:hover path {
     fill: #FA7453;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: url("../images/bg-pattern-1.svg"), url("../images/bg-main-tablet.png");
+    background-size: auto 400px, 1200px;
+    background-position: top -40px right -50px, top -155px left -270px;
+  }
+
+  header {
+    padding: 64px 44px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero {
+    margin-top: 64px;
+    padding: 0 44px 64px;
+    align-self: flex-start;
+  }
+  .hero__title {
+    max-inline-size: 416px;
+    font-size: 64px;
+    line-height: 100%;
+  }
+  .hero__caption {
+    max-inline-size: 504px;
+    font-size: 18px;
+  }
+
+  .content {
+    margin: 200px 0;
+    border-radius: 12px;
+    max-width: 680px;
+    height: 600px;
+    background-position: left top;
+  }
+  .content__img {
+    height: 556px;
+    top: -114px;
+    left: 175px;
+  }
+  .content__card {
+    padding: 48px;
+    border-radius: 16px;
+    max-width: 356px;
+    right: 64px;
+    bottom: -114px;
+  }
+  .content__card-caption {
+    font-size: 18px;
+  }
+
+  footer {
+    padding: 64px 40px 80px;
+  }
+
+  .footer-inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
 }
