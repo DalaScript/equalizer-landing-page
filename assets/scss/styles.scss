@@ -45,10 +45,29 @@ body {
 
 header {
     padding: 64px 20px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.header-wrapper {
+    width: 100%;
+    max-width: 335px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero {
-    padding: 0 20px 64px;
+    padding-bottom: 64px;
+    width: 100%;
+    max-width: 335px;
+
+    display: flex;
+    justify-content: flex-start;
 
     &__title {
         font-family: "IBM Plex Sans";
@@ -77,6 +96,7 @@ header {
 .content {
     margin: 110px 0 625px;
     width: 100%;
+    max-width: 375px;
     height: 380px;
 
     background-color: $slate;
@@ -192,6 +212,14 @@ header {
 
 footer {
     padding: 64px 20px 80px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.footer-wrapper {
+    width: 100%;
+    max-width: 335px;
 }
 
 .footer-inner {
@@ -303,6 +331,10 @@ footer {
         padding: 64px 44px;
     }
 
+    .header-wrapper {
+        max-width: 680px;
+    }
+
     main {
         display: flex;
         flex-direction: column;
@@ -310,10 +342,9 @@ footer {
     }
 
     .hero {
-        margin-top: 64px;
+        padding: 64px 0;
+        max-width: 680px;
 
-        padding: 0 44px 64px;
-        align-self: flex-start;
         &__title {
             max-inline-size: 416px;
             font-size: 64px;
@@ -359,11 +390,88 @@ footer {
         padding: 64px 40px 80px;
     }
 
+    .footer-wrapper {
+        max-width: 688px;
+    }
+
     .footer-inner {
         width: 100%;
         display: flex;
         justify-content: space-between;
     }
 
+
+}
+
+@media only screen and (min-width: 1440px) {
+    body {
+        background-image: url(../images/bg-pattern-1.svg), url(../images/bg-main-desktop.png);
+        background-size: auto 468px, 1890px auto;
+        background-position: right top -40px, -200px -300px;
+    }
+
+    header {
+        padding: 64px 160px;
+    }
+
+    .header-wrapper {
+        max-width: 1120px
+    }
+
+    .hero {
+        max-width: 1120px;
+
+        &__title {
+            max-inline-size: 928px;
+
+            font-size: 88px;
+        }
+
+        &__caption {
+            max-inline-size: 736px;
+
+            font-size: 20px;
+        }
+    }
+
+    .content {
+        padding: 0 160px 64px;
+        max-width: 1120px;
+
+        background-position: left 368px top;
+
+        &__img {
+            height: 642px;
+
+            top: -121px;
+            left: 256.5px;
+        }
+
+        &__card {
+            padding: 56px;
+            max-width: 512px;
+
+            top: 89px;
+        }
+    }
+
+    footer {
+        padding: 64px 160px 80px;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-wrapper {
+        max-width: 1120px;
+        
+        display: flex;
+        align-items: flex-start;
+        gap: 128px
+    }
+
+    .footer-inner {
+        margin-top: 0;
+    }
 
 }
