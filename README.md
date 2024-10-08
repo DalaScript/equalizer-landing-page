@@ -39,6 +39,13 @@ Users should be able to:
 
 ### Built with
 
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
+- bem - [Block Element Modifier](https://getbem.com/introduction/)
+- scss - [Sassy Cascading Style Sheets](https://sass-lang.com/documentation/at-rules/control/for/)
+
 ### What I learned
 
 Nothing special, but I believe it was a really good experience. In this project, I worked extensively with the background property and its shorthand.
