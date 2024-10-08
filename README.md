@@ -41,12 +41,7 @@ Users should be able to:
 
 ### What I learned
 
-```html
-```
-```css
-```
-```js
-```
+Nothing special, but I believe it was a really good experience. In this project, I worked extensively with the background property and its shorthand.
 
 ### Continued development
 
